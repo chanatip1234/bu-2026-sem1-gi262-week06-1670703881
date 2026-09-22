@@ -2,8 +2,19 @@ using UnityEngine;
 
 namespace MidtermExam.Prob01
 {
-    public class Warrior
+    public class Warrior : Hero
     {
-        // TODO: Implement inheritance, fields and methods according to Class Diagram
+        public int ShildDefense = 20;
+        private float rage = 2.0f;
+
+        public override void Attack(GameEntity target)
+        {
+            Debug.Log("Warrior attacks with a mighty strike!");
+        }
+
+        public void ShildBash()
+        {
+            Debug.Log("Warrior performs a shield bash!");
+        }
     }
 }

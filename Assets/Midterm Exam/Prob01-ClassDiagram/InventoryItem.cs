@@ -4,6 +4,13 @@ namespace MidtermExam.Prob01
 {
     public class InventoryItem
     {
-        // TODO: Implement fields and methods according to Class Diagram
+        public string itemName = "Sword";
+        protected int weight = 20;
+        private int itemvalue = 50;
+
+        public virtual void UseItem()
+        {
+            Debug.Log($"Using {itemName}!");
+        }
     }
 }
